@@ -13,7 +13,7 @@ variables:
   subscription: Azure subscription 1(e4a62254-665a-40a0-a59c-3c45d4e00d77)
   resourceGroup: rg-terraform
   storageAccount: hhjstagestorage
-  container: stage
+  container: state
   tfstateFile: terraform2.tfstate
   anyTfChanges: false
 
