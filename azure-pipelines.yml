@@ -37,13 +37,13 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'plan'
-    environmentServiceNameAzureRM: 'Azure subscription 1(1)(e4a62254-665a-40a0-a59c-3c45d4e00d77)'
-    environmentAzureRmOverrideSubscriptionID: '$(subscription)'
+    environmentServiceNameAzureRM: '$(subscription)'
+ 
 
 - task: TerraformTask@5
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    environmentServiceNameAzureRM: 'Azure subscription 1(e4a62254-665a-40a0-a59c-3c45d4e00d77)'
-    environmentAzureRmOverrideSubscriptionID: '$(subscription)'
+    environmentServiceNameAzureRM: '$(subscription)'
+
 
